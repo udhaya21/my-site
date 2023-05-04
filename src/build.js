@@ -57,6 +57,10 @@ webpack(
             from: path.join(__dirname, "../public/manifest.json"),
             to: path.join(__dirname, "../build/manifest.json"),
           },
+          {
+            from: path.join(__dirname, "../public/CNAME"),
+            to: path.join(__dirname, "../build/CNAME"),
+          },
         ],
       }),
     ],
