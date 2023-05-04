@@ -3,9 +3,9 @@
 const path = require("path");
 const webpack = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { WebpackManifestPlugin } = require("webpack-manifest-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WorkboxPlugin = require("workbox-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 const isProduction = process.env.NODE_ENV === "production";
 
@@ -43,7 +43,6 @@ webpack(
           ? "[contenthash].[name].bundle.css"
           : "[name].css",
       }),
-      new WebpackManifestPlugin({ publicPath: "/" }),
       new HtmlWebpackPlugin({
         template: path.join(__dirname, "../public/index.html"),
         inject: "body",
@@ -51,6 +50,14 @@ webpack(
       new WorkboxPlugin.GenerateSW({
         clientsClaim: true,
         skipWaiting: true,
+      }),
+      new CopyWebpackPlugin({
+        patterns: [
+          {
+            from: path.join(__dirname, "../public/manifest.json"),
+            to: path.join(__dirname, "../build/manifest.json"),
+          },
+        ],
       }),
     ],
   },
