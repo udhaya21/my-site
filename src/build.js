@@ -59,7 +59,9 @@ webpack(
           },
           {
             from: path.join(__dirname, "../public/CNAME"),
-            to: path.join(__dirname, "../build/CNAME"),
+            to({ context, absoluteFilename }) {
+              return Promise.resolve("../build/[name]");
+            },
           },
         ],
       }),
