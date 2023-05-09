@@ -54,6 +54,10 @@ webpack(
             to: path.join(__dirname, '../build/manifest.json'),
           },
           {
+            from: path.join(__dirname, '../public/favicon.ico'),
+            to: path.join(__dirname, '../build/'),
+          },
+          {
             from: path.join(__dirname, '../public/CNAME'),
             to({ context, absoluteFilename }) {
               return Promise.resolve('../build/[name]');
