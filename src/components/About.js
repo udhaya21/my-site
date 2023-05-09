@@ -48,7 +48,7 @@ const About = () => (
                   <span>Bachelor Of Computer Science and Engineering</span>
                 </li>
                 <li>
-                  <i className='bi bi-chevron-right'></i> <strong>PhEmailone:</strong>{' '}
+                  <i className='bi bi-chevron-right'></i> <strong>Email:</strong>{' '}
                   <span>udhayaprakasha@icloud.com</span>
                 </li>
                 <li>
