@@ -1,6 +1,6 @@
 const Profile = () => (
   <div className='profile'>
-    <img src='assets/img/profile-img.jpg' alt='' className='img-fluid rounded-circle' />
+    {/* <img src='assets/img/profile-img.jpg' alt='' className='img-fluid rounded-circle' /> */}
     <h1 className='text-light'>
       <a href='index.html'>Udhayaprakasha</a>
     </h1>
