@@ -45,7 +45,7 @@ const About = () => (
                 </li>
                 <li>
                   <i className='bi bi-chevron-right'></i> <strong>Degree:</strong>{' '}
-                  <span>Bachelor Of Computer Science and Engineering</span>
+                  <span>Bachelor Of Engineering in Computer Science and Engineering</span>
                 </li>
                 <li>
                   <i className='bi bi-chevron-right'></i> <strong>Email:</strong>{' '}
