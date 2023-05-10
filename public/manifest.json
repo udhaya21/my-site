@@ -9,9 +9,8 @@
   "icons": [
     {
       "src": "https://avatar.anywhere.app/files/img/fNtIvtmtVxjz/blob",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable any"
+      "sizes": "400x400",
+      "type": "image/png"
     }
   ],
   "related_applications": [

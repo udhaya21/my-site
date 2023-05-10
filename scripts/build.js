@@ -46,6 +46,11 @@ webpack(
       new WorkboxPlugin.GenerateSW({
         clientsClaim: true,
         skipWaiting: true,
+        exclude: [
+          /\.map$/, // source maps
+          /^manifest.*\.js(?:on)?$/, // web app manifest
+          /CNAME/,
+        ],
       }),
       new CopyWebpackPlugin({
         patterns: [
