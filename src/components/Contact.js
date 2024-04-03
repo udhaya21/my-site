@@ -23,12 +23,6 @@ const Contact = () => (
               <h4>Email:</h4>
               <p>udhayaprakasha@icloud.com</p>
             </div>
-
-            <div className='phone'>
-              <i className='bi bi-phone'></i>
-              <h4>Call:</h4>
-              <p>+91 99400 20612</p>
-            </div>
           </div>
         </div>
       </div>
